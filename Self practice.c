@@ -324,3 +324,144 @@ return 0;
 		printf("InValid");
 	return 0;
 }*/
+/*int main()
+{
+	int ip,tp,hours=0;
+	printf("Enter initial population:");
+	scanf_s("%d",&ip);
+	printf("Enter target population:");
+	scanf_s("%d", &tp);
+	while (ip<tp)
+	{
+		ip = ip * 2;
+		hours++;
+		printf("\nTarget reached in %d hours.(Population:%d)\n", hours, ip);
+	}
+	
+	if (hours < 24)
+	{
+		printf("\nFast growing culture");
+	}
+	else
+	{
+		printf("\nSlow growing culture");
+	}
+	return 0;
+}*/
+/*int main()
+{
+	int pin = 1234, choice, enteredpin;
+	
+	do {
+		printf("Enter pin:");
+		scanf_s("%d", &enteredpin);
+		if (enteredpin != pin)
+		{
+			printf("Try again!\n");
+		}
+
+	} while (enteredpin!=pin);
+	{
+		printf("Authenticated\n");
+	}
+	printf("Choose action:\n1. Check Balance\n2. Deposit\n3. Withdraw\n4. Exit");
+	scanf_s("%d", &choice);
+	switch (choice)
+	{
+	case 1:
+		printf("Available Balance=");
+		break;
+	case 2:
+		printf("Enter deposit amount=");
+		break;
+	case 3:
+		printf("Enter withdrawal amount=");
+		break;
+	case 4:
+		printf("Exit");
+		break;
+	default:
+		printf("Invalid action");
+	}*/
+	
+/*int main()
+{
+	float total_revenue=0.0;
+	char ch;
+	printf("Enter vehicle\nEnter C for Cars\nEnter T for Truck\nEnter M for Motorbike\nEnter Q for quit");
+	scanf_s("%c", &ch);
+	while (ch != 'q'&& ch!='Q')
+	{
+		if (ch == 'C' || ch == 'c')
+		{
+			total_revenue = 2.00+ total_revenue;
+		}
+		else if (ch == 'T' || ch == 't')
+		{
+			total_revenue = 5.00+ total_revenue;
+		}
+		else if (ch == 'M' || ch == 'm')
+		{
+			total_revenue = 1.00 + total_revenue;
+		}
+		else
+			printf("Invalid character is entered");
+
+		printf("Enter next vehicle:");
+		scanf_s(" %c", &ch);
+	}
+	printf("Total veneu collected=$%.2f",total_revenue);
+	return 0;
+}*/
+/*int main()
+{
+	
+	int choice,time;
+	double distance;
+	do {
+		printf("Choose action:\nEnter 1 for Air\nEnter 2 for Water \nEnter 3 for steel\nEnter 4 for Quit");
+		scanf_s("%d", &choice);
+		if (choice >= 1 && choice <= 3)
+		{
+			printf("Enter time:");
+			scanf_s(" %d", &time);
+			switch (choice)
+			{
+			case 1:
+				distance = 1100 * time;
+				printf("Distance travel in air =%lf",distance);
+				break;
+			case 2:
+				distance = 4900 * time;
+				printf("Distance travel in water =%lf", distance);
+				break;
+			case 3:
+				distance = 16400 * time;
+				printf("Distance travel in steel =%lf", distance);
+				break;
+			}
+		}
+	} while (choice != 4);
+	return 0;
+}*/
+int main()
+{
+	int width, height;
+	printf("Enter width and height");
+	scanf_s("%d\n%d",&width,&height);
+	for (int row = 0; row < height; row++)
+	{
+		for (int col = 0; col < height; col++)
+		{
+
+			if (row % 2 == 0)
+				printf("#");
+			else
+				printf("*");
+
+		}
+		printf("\n");
+	}
+	
+	return 0;
+}
